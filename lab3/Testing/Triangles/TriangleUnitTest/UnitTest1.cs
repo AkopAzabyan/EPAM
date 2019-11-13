@@ -32,7 +32,7 @@ namespace TriangleUnitTest
         }
 
         [TestMethod]
-        public void IsTriangleBadTest()
+        public void IsIsoscelesTriangleBadTest()
         {
             Assert.IsFalse(Triangle.IsTriangle(1, 4, 7));
         }
@@ -44,19 +44,19 @@ namespace TriangleUnitTest
         }
 
         [TestMethod]
-        public void IsTriangleOneBadSideTest()
+        public void IsIsoscelesTriangleOneBadSideTest()
         {
             Assert.IsFalse(Triangle.IsTriangle(4, -5, 6));
         }
 
         [TestMethod]
-        public void IsTriangleTwoBadSidesGoodTest()
+        public void IsTriangleTwoBadSidesTest()
         {
             Assert.IsFalse(Triangle.IsTriangle(-4, -5, 6));
         }
 
         [TestMethod]
-        public void IsTriangleThreeBadSidesGoodTest()
+        public void IsRightTriangleThreeBadSidesTest()
         {
             Assert.IsFalse(Triangle.IsTriangle(-4, -5, -6));
         }
